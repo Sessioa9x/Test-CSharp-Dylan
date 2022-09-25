@@ -1,0 +1,32 @@
+1) book
+
+2) //book[@type="roman"]/title
+
+3) count(//book[@type="roman"])
+
+4) /library/library/ancestor-or-self::library renvoie :
+
+    <library>
+        <book>
+            <title>toto1</title>
+            <author>titi</author>
+        </book>
+        <book type="doc">
+            <title>toto2</title>
+            <author>titi</author>
+        </book>
+        <book type="roman">
+            <title>toto3</title>
+            <author>titi</author>
+        </book>
+        <book type="bd">
+            <title>toto4</title>
+            <author>titi2</author>
+        </book>
+        <library>
+            <book type="roman">
+                <title>toto5</title>
+                <author>titi</author>
+            </book>
+        </library>
+    </library>
